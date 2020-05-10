@@ -3,7 +3,7 @@
 # STEP 1. On GCP Console, visit IAM & Admin --> Service Accounts
 # STEP 2. Create a new Service Account, like "terraform-service-account"
 # STEP 3. Add appropriate permission, like Compute Engine Admin, Network Management Admin, etc.
-# STEP 4. Once created, click no the ellipsis (three dots) and select "Create Key", choose JSON
+# STEP 4. Once created, click the ellipsis (three dots) and select "Create Key", choose JSON
 # STEP 5. Save it on hard disk - somewhere safe
 # STEP 6. Add an environment variable pointing at the full path of this JSON file:
           export GOOGLE_CLOUD_KEYFILE_JSON="/path/to/credentials.json"
