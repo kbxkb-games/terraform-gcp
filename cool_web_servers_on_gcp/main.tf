@@ -11,14 +11,16 @@
 # =========================================================================================== */
 
 provider "google" {
-        project         = "cr-lab-kbiswas-2304204819"
-	version		= "~> 3.20"
-	region		= "us-central1"
-	zone		= "us-central1-c"
+        project         	= "cr-lab-kbiswas-2304204819"
+	version			= "~> 3.20"
+	region			= "us-central1"
+	zone			= "us-central1-c"
 }
 
 module "vpc_for_my_web_servers" {
-	source		= "../modules/networking"
-	company		= "aran"
-	env		= "dev"
+	source			= "../modules/networking"
+	company			= "aran"
+	env			= "dev"
+	public_subnet_cidr	= "10.26.1.0/24"
+	private_subnet_cidr	= "10.26.2.0/24"
 }
